@@ -37,3 +37,9 @@ Runs `phpspec run`
 ### $ gulp phpspec:watch
 
 Watches `spec/**/*Spec.php` and `src/**/*.php` files and runs the `phpspec` task each time they change.
+
+
+## Roadmap
+
+1. Add task to automatically generate `phpspec.yml.dist` file with namespace
+1. Improve watcher to only run tests associated with changed file
