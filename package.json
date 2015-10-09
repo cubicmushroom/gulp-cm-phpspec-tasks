@@ -1,0 +1,30 @@
+{
+  "name": "gulp-cm-phpspec-tasks",
+  "version": "1.0.0",
+  "description": "Helpful PHPSpec Gulp tasks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cubicmushroom/gulp-cm-phpspec-tasks.git"
+  },
+  "keywords": [
+    "gulp",
+    "phpspec",
+    "tasks"
+  ],
+  "author": "Toby Griffiths <toby@cubicmushroom.co.uk> (http://tobyg.net)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cubicmushroom/gulp-cm-phpspec-tasks/issues"
+  },
+  "homepage": "https://github.com/cubicmushroom/gulp-cm-phpspec-tasks",
+  "dependencies": {
+    "gulp-notify": "^2.2.0",
+    "gulp-phpspec": "^0.5.3",
+    "shelljs": "^0.5.3",
+    "yargs": "^3.27.0"
+  }
+}
