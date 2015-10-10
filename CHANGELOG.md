@@ -2,7 +2,7 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## 1.2.0 - 2015-10-10
+## 1.1.0 - 2015-10-10
 ### Added
 - Added `options` argument to allow setting of binary path
 ### Fixed
