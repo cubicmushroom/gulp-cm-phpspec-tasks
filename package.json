@@ -1,6 +1,6 @@
 {
   "name": "gulp-cm-phpspec-tasks",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Helpful PHPSpec Gulp tasks",
   "main": "index.js",
   "scripts": {
