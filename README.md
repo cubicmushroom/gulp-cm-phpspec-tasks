@@ -16,8 +16,14 @@ In your gruntfile.js…
     
     var phpspecNamespace = 'Your\\Custom\\Namespace\\';
     
-    phpspecTasks.addTasks(gulp, phpspecNamespace);
+    phpspecTasks.addTasks(gulp, phpspecNamespace, [options]);
 
+
+## Options
+
+### options.bin
+
+Sets the PHPSpec binary path, relative to the project root.
 
 ## Tasks
 
