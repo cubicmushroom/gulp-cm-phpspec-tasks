@@ -78394,15 +78394,22 @@ var global = Function("return this;")();
      * Add PHPSpec tasks
      * @param gulp
      * @param namespace
+     * @param {{bin: {string}}} options
      */
-    module.exports.addTasks = function(gulp, namespace) {
+    module.exports.addTasks = function (gulp, namespace, options) {
     
       // -----------------------------------------------------------------------------------------------------------------
       // PHPSpec Tasks
       // -----------------------------------------------------------------------------------------------------------------
     
+      var phpspecBin;
+    
       var phpspecGlob = 'spec/**/*Spec.php';
       var srcGlob = 'src/**/*.php';
+    
+      options = options || {};
+    
+      phpspecBin = options.bin || 'vendor/bin/phpspec';
     
       gulp.task('desc', function () {
         var className;
@@ -78426,7 +78433,7 @@ var global = Function("return this;")();
         }
     
         className = namespace.replace(/\\/g, '/') + yargs.argv.c;
-        shell.exec('phpspec desc ' + className);
+        shell.exec(phpspecBin + ' desc ' + className);
       });
     
       // phpspec
@@ -78434,7 +78441,7 @@ var global = Function("return this;")();
         var options = {debug: true, notify: true};
     
         gulp.src(phpspecGlob)
-          .pipe(phpspec('', options))
+          .pipe(phpspec(phpspecBin, options))
           .on('error', notify.onError({
             title  : "Testing Failed",
             message: "Error(s) occurred during PHPSpec test..."
